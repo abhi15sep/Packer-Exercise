@@ -7,4 +7,5 @@ AWS_SECRET_ACCESS_KEY
 
 Happy Packering!
 
-Paul
+1. packer build -debug template.packer
+2. packer build template.packer
