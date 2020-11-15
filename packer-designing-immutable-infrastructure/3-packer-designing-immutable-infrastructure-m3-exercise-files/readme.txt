@@ -9,4 +9,8 @@ Also, I've included the source for Globalmantics middle-tier app in Go, in case 
 
 Happy Packering!
 
-Paul
+1. export AUTH_HEADER='SuperSecureCode'
+2. packer build -var 'ami_id=ami-9abea4fb' -var 'supervisor_version=3.0b2-1' template.packer
+3. vagrant init virtualbox-MiddleTier.box
+4. vagrant up
+5. vagrant ssh
