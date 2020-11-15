@@ -11,4 +11,6 @@ Note that depending on which OS you have Docker installed on, you may need to co
 
 Happy Packering!
 
-Paul
+1. packer build -only="docker" -var 'ami_id=ami-9abea4fb' -var 'supervisor_version=3.0b2-1' template.packer
+2. cat middletier.tar | docker import - middletier:latest
+3. docker run -d -it middletier:latest /bin/bash -c "sudo service supervisor start && sudo service nginx start && bash"
